@@ -22,37 +22,52 @@
 					<nav>
 				        <ul>
 						<li><a href="cliente.php?<?php
-								if(isset($_GET['cont'],$_GET['c1'],$_GET['c2'],$_GET['c3'],$_GET['c4'],$_GET['c5'])){
-									$cont=$_GET['cont'];
-									$xop1=$_GET['c1'];
-									$xop2=$_GET['c2'];
-									$xop3=$_GET['c3'];
-									$xop4=$_GET['c4'];
-									$xop5=$_GET['c5'];
-									echo "cont=$cont&c1=$xop1&c2=$xop2&c3=$xop3&c4=$xop4&c5=$xop5";
-								}
+								if(isset($_GET['cont'],$_GET['c1'],$_GET['c2'],$_GET['c3'],$_GET['c4'],$_GET['c5'],$_GET['c6'],$_GET['c7'],$_GET['c8'],$_GET['c9'],$_GET['c10'])){
+								$cont=$_GET['cont'];
+								$xop1=$_GET['c1'];
+								$xop2=$_GET['c2'];
+								$xop3=$_GET['c3'];
+								$xop4=$_GET['c4'];
+								$xop5=$_GET['c5'];
+									$xop6=$_GET['c6'];
+									$xop7=$_GET['c7'];
+									$xop8=$_GET['c8'];
+									$xop9=$_GET['c9'];
+									$xop10=$_GET['c10'];
+								echo "cont=$cont&c1=$xop1&c2=$xop2&c3=$xop3&c4=$xop4&c5=$xop5&c6=$xop6&c7=$xop7&c8=$xop8&c9=$xop9&c10=$xop10";
+							}
 							?>">Inicio</a></li>
 						<li><a href="servicios.php?
 							<?php
-								if(isset($_GET['cont'],$_GET['c1'],$_GET['c2'],$_GET['c3'],$_GET['c4'],$_GET['c5'])){
-									$cont=$_GET['cont'];
-									$xop1=$_GET['c1'];
-									$xop2=$_GET['c2'];
-									$xop3=$_GET['c3'];
-									$xop4=$_GET['c4'];
-									$xop5=$_GET['c5'];
-									echo "cont=$cont&c1=$xop1&c2=$xop2&c3=$xop3&c4=$xop4&c5=$xop5";
-								}
+								if(isset($_GET['cont'],$_GET['c1'],$_GET['c2'],$_GET['c3'],$_GET['c4'],$_GET['c5'],$_GET['c6'],$_GET['c7'],$_GET['c8'],$_GET['c9'],$_GET['c10'])){
+								$cont=$_GET['cont'];
+								$xop1=$_GET['c1'];
+								$xop2=$_GET['c2'];
+								$xop3=$_GET['c3'];
+								$xop4=$_GET['c4'];
+								$xop5=$_GET['c5'];
+									$xop6=$_GET['c6'];
+									$xop7=$_GET['c7'];
+									$xop8=$_GET['c8'];
+									$xop9=$_GET['c9'];
+									$xop10=$_GET['c10'];
+								echo "cont=$cont&c1=$xop1&c2=$xop2&c3=$xop3&c4=$xop4&c5=$xop5&c6=$xop6&c7=$xop7&c8=$xop8&c9=$xop9&c10=$xop10";
+							}
 							?>">servicios</a></li>
 						<li><a href="t_pagar.php?<?php
-								if(isset($_GET['cont'],$_GET['c1'],$_GET['c2'],$_GET['c3'],$_GET['c4'],$_GET['c5'])){
+								if(isset($_GET['cont'],$_GET['c1'],$_GET['c2'],$_GET['c3'],$_GET['c4'],$_GET['c5'],$_GET['c6'],$_GET['c7'],$_GET['c8'],$_GET['c9'],$_GET['c10'])){
 									$cont=$_GET['cont'];
 									$xop1=$_GET['c1'];
 									$xop2=$_GET['c2'];
 									$xop3=$_GET['c3'];
 									$xop4=$_GET['c4'];
 									$xop5=$_GET['c5'];
-									echo "cont=$cont&c1=$xop1&c2=$xop2&c3=$xop3&c4=$xop4&c5=$xop5";
+									$xop6=$_GET['c6'];
+									$xop7=$_GET['c7'];
+									$xop8=$_GET['c8'];
+									$xop9=$_GET['c9'];
+									$xop10=$_GET['c10'];
+									echo "cont=$cont&c1=$xop1&c2=$xop2&c3=$xop3&c4=$xop4&c5=$xop5&c6=$xop6&c7=$xop7&c8=$xop8&c9=$xop9&c10=$xop10";
 								}
 							?>">Total a pagar</a></li>
 
@@ -74,9 +89,19 @@
 							$res.="<br>->Equipo de sonido";// code...
 						}if ($cont=$_GET['c4']=="on") {
 							$res.="<br>->Mobiliario";// code...
+						}if ($cont=$_GET['c6']=="on") {
+							$res.="<br>->Manteles mesas";// code...
+						}if ($cont=$_GET['c7']=="on") {
+							$res.="<br>->Fundas sillas";// code...
+						}if ($cont=$_GET['c8']=="on") {
+							$res.="<br>->Moños";// code...
+						}if ($cont=$_GET['c9']=="on") {
+							$res.="<br>->Sillas";// code...
+						}if ($cont=$_GET['c10']=="on") {
+							$res.="<br>->Mesas";// code...
 						}if ($cont=$_GET['c5']=="on") {
 							$res.="->Rentar solo el salon";// code...
-						}if ($cont=$_GET['c5']==""&&$cont=$_GET['c4']==""&&$cont=$_GET['c3']==""&&$cont=$_GET['c2']==""&&$cont=$_GET['c1']=="") {
+						}if ($cont=$_GET['c5']==""&&$cont=$_GET['c4']==""&&$cont=$_GET['c3']==""&&$cont=$_GET['c2']==""&&$cont=$_GET['c1']==""&&$cont=$_GET['c6']==""&&$cont=$_GET['c7']==""&&$cont=$_GET['c8']==""&&$cont=$_GET['c9']==""&&$cont=$_GET['c10']=="") {
 							$res.="->No has seleccionado algun servicio";// code...
 						}
 
